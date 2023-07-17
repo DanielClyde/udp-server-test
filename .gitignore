@@ -1,4 +1,6 @@
 .env
-/dist
-/node_modules
+dist
+node_modules
 .npmrc
+.nyc_output
+coverage

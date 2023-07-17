@@ -1,4 +1,4 @@
-import { Message } from "@ncss/message";
+import { Message } from '@ncss/message';
 
 export enum PingMessageType {
   GROUP_MASK = 0x3A10,

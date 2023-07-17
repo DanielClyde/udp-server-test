@@ -3,7 +3,8 @@ import { RouteTableEntry } from './route-table/RouteTableEntry';
 
 export class UDPApp {
   private socket: UDPSocket = new UDPSocket();
-  private routeTable: { [address: string]: RouteTableEntry } = {};
+  routeTable: { [address: string]: RouteTableEntry } = {};
+  running = false;
 
 
   async init() {
@@ -19,11 +20,14 @@ export class UDPApp {
     });
   }
 
-  start() {
-    return this.socket.bind();
+  async start() {
+    await this.socket.bind();
+    this.running = true;
   }
 
-  stop() {
-    return this.socket.close();
+  async stop() {
+    await this.socket.close();
+    this.routeTable = {};
+    this.running = false;
   }
 }

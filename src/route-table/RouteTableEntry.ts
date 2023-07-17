@@ -1,10 +1,10 @@
-import { Message, MessageService } from "@ncss/message";
-import { Ping, PingMessageType } from "../messages/Ping";
-import { Pong } from "../messages/Pong";
-import { CheckIn, CheckInMessageType } from "../messages/CheckIn";
-import { ByteList } from "byte-list";
-import { UDPSocket } from "../UDPSocket";
-import { CheckInAck } from "../messages/CheckInAck";
+import { Message, MessageService } from '@ncss/message';
+import { Ping, PingMessageType } from '../messages/Ping';
+import { Pong } from '../messages/Pong';
+import { CheckIn, CheckInMessageType } from '../messages/CheckIn';
+import { ByteList } from 'byte-list';
+import { UDPSocket } from '../UDPSocket';
+import { CheckInAck } from '../messages/CheckInAck';
 
 export class RouteTableEntry {
   private messageService = new MessageService();

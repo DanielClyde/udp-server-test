@@ -1,6 +1,6 @@
-import { Message } from "@ncss/message";
-import { PingMessageType } from "./Ping";
-import { ByteList } from "byte-list";
+import { Message } from '@ncss/message';
+import { PingMessageType } from './Ping';
+import { ByteList } from 'byte-list';
 
 export class Pong extends Message {
   type = PingMessageType.DEVICE_PONG;

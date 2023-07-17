@@ -1,5 +1,5 @@
-import { Message } from "@ncss/message";
-import { ByteList } from "byte-list";
+import { Message } from '@ncss/message';
+import { ByteList } from 'byte-list';
 
 export enum CheckInMessageType {
   GROUP_MASK = 0x3B10,
